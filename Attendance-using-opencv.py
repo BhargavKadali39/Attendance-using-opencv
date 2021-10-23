@@ -33,7 +33,7 @@ def button_hand():
               mp_drawing.draw_landmarks(
                   image, hand_landmarks, mp_hands.HAND_CONNECTIONS)
           cv2.imshow('Hands Detection - Press ESC to exit the window', image)
-          if cv2.waitKey(5) & 0xFF == 27:
+          if cv2.waitKey(1) & 0xFF == 27:
               break
     cap.release()
     return None
